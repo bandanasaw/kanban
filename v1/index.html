@@ -16,10 +16,10 @@
 
 <body>
 
-    <header class="kb-header">
+    <header class="kb-header" id='kbHeader'>
         <div class="kb-header-name">
             <h1>
-                MY KANBAN BOARD
+                MY KANBAN BOARD V1
             </h1>
         </div>
 
@@ -32,6 +32,17 @@
                    name="search">
         </div>
 
+        <select id="kb-List"
+                class="kb-select">
+            <option value="v1">v1</option>
+            <!-- <option value="v2">v2</option>
+            <option value="v3">v3</option>
+            <option value="v4">v4</option> -->
+
+
+
+        </select>
+
     </header>
 
 
@@ -43,22 +54,25 @@
 
         <button class="kb-btn"
                 onclick="addCart()"> +Add Cart</button>
-        <p id="addCart"></p>
-        <div>
-            <textarea id="text"
-                      class="kb-text"></textarea>
-        </div>
-        <div class="kb-flex-btn">
-            <button class="kb-add-btn"
-                    onclick="add()">Add</button>
-            <button class="kb-cancel-btn"
-                    onclick="cancel()">Cancel</button>
+        <!-- <div>
+            <span>
+                1 : add card button is clicked
+            </span>
+            <button> <i class="fa fa-trash-o"></i>delete</button>
+        </div> -->
 
-        </div>
+    <!--
+        1) create div const cardDiv  =  document.createElement('div')
 
-        </div>
+        2) create span , add text
+        3) create button
 
-    </main>
+        4) appned span into div
+        5) apenbutton div
+        6) append div to placeholder
+    -->
+         <div id="addCart"></div>
+       </main>
 
 
     <footer class='kb-footer'>
@@ -67,7 +81,8 @@
 
 
     <!-- <script src="/js/header.js"></script> -->
-    <script src="/js/main.js"></script>
+     <script src="/index.js"></script> 
+    <!-- <script src="/js/main.js"></script>  -->
 </body>
 
 </html>

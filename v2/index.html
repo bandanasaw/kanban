@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet"
+          href="./css/style.css" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+
+    <header class="kb-header"
+            id='kbHeader'>
+        <div class="kb-header-name">
+            <h1>
+                MY KANBAN BOARD V2
+            </h1>
+        </div>
+
+
+
+        <div class="kb-header-search-box">
+
+            <input type="text"
+                   placeholder="Search.."
+                   name="search">
+        </div>
+
+        <select id="kb-List"
+                class="kb-select">
+            <option value="v2">v2</option>
+            <!-- <option value="v2">v2</option>
+            <option value="v3">v3</option>
+            <option value="v4">v4</option> -->
+
+
+
+        </select>
+
+    </header>
+
+
+
+    <div class='kb-root'></div>
+
+
+
+    <main>
+        <button class="kb-btn"
+                onclick="addCart()"> +Add Cart</button>
+        <!-- <div>
+            <span>
+                1 : add card button is clicked
+            </span>
+            <button> <i class="fa fa-trash-o"></i>delete</button>
+        </div> -->
+
+        <!--
+        1) create div const cardDiv  =  document.createElement('div')
+
+        2) create span , add text
+        3) create button
+
+        4) appned span into div
+        5) apenbutton div
+        6) append div to placeholder
+    -->
+
+
+        <div id="addCart"></div>
+
+
+        <div class='kb-add-cart-section' style='border:1px solid;padding:5px'>
+            <textarea style='border:1px solid;padding:5px'></textarea>
+            <div style='border:1px solid;padding:5px'>
+                <button>cancel</button>
+                <button>Add</button>
+            </div>
+        </div>
+
+        <div class='kb-card-added-section' style='border:1px solid;padding:5px; margin-top:20px' >
+            <div class='result' style='border:1px solid;padding:5px'>
+               <span>1 : added text</span> 
+               <button> delete</button>
+            </div>
+        </div>
+
+
+    </main>
+
+
+    <footer class='kb-footer'>
+        <h2>@copyright 2021 version V2</h2>
+    </footer>
+
+
+    <!-- <script src="/js/header.js"></script> -->
+    <script src="/js/index.js"></script>
+    <!-- <script src="/js/main.js"></script>  -->
+</body>
+
+</html>
